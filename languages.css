@@ -1,0 +1,50 @@
+.hero-unit:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-image: url('http://www.refugeecouncil.org.uk/assets/0001/9146/1359913911.jpg?1359913911');
+    background-size:cover;
+    height: 450px;
+    filter: blur(12px);
+}
+
+.hero-unit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    padding-left: 50px;
+    height: 450px;
+}
+
+.online-courses {
+    margin-bottom: 25px;
+}
+
+.provider-logo {
+    width: 120px;
+    height: 120px;
+}
+
+.provider-container {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.provider-thumbnail {
+    text-align: center;
+}
+
+.provider-container a:hover {
+    text-decoration: none;
+}
+
+.header {
+    margin-bottom: 25px;
+}

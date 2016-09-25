@@ -1,0 +1,55 @@
+.info-section {
+    padding: 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+.components-section {
+    padding: 25px;
+}
+
+.components-section .banner {
+    padding: 0;
+}
+
+.component {
+    display: flex;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner .top, .banner .middle {
+    width: 100%;
+}
+
+.banner .top {
+    height: 10px;
+    margin-bottom: 5px;
+}
+
+.banner .banner-title h4 {
+    text-transform: uppercase;
+}
+
+.banner .banner-content {
+    padding: 15px;
+}
+
+.banner .middle {
+    height: 200px;
+    text-align: center;
+}
+
+.banner .bottom {
+    width: 100%;
+    height: 20px;
+    -webkit-clip-path: polygon(50% 90%, 0 0, 100% 0);
+    clip-path: polygon(50% 90%, 0 0, 100% 0);
+}
+
+.goal-container {
+    margin-top: 25px;
+    text-align: center;
+}

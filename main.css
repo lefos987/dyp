@@ -1,34 +1,107 @@
-body {
-    margin:0;
+.navbar {
+    margin-bottom: 0;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
+.hero-unit:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-image: url('https://community.uservoice.com/wp-content/uploads/prioritize-product-roadmap-800x400.jpg');
+    background-size:cover;
+    height: 450px;
+    filter: blur(10px);
 }
 
-.column {
+.hero-unit {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    padding-left: 50px;
+    height: 450px;
 }
 
-.steps {
-    padding: 50px;
-    background-color: #ccc;
-    justify-content: space-between;
+.hero-unit h1 {
+    color: #fff;
+    margin-bottom: 25px;
+    z-index: 10;
+    text-shadow: 2px 2px #0f0f0f;
+}
+
+.hero-unit h4 {
+    color: #fff;
+    text-shadow: 2px 2px #0f0f0f;
+}
+
+.courses {
+    padding: 25px;
+}
+
+.course-container {
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+.course-thumbnail {
+    position: relative;
+    background-size: cover;
+    height: 250px;
+}
+
+.course-thumbnail.language {
+    background-image:url('http://ichef-1.bbci.co.uk/news/660/cpsprodpb/E486/production/_87420585_thinkstockphotos-497124232.jpg');
+}
+
+.course-thumbnail.tech-skills {
+    background-image:url('http://thetipsguru.com/wp-content/uploads/2016/07/dont-need-technical-skills-succeed-online_39307110_xxl.jpg');
+}
+.course-thumbnail.continued-education {
+    background-image:url('http://cdn.grid.fotosearch.com/CSP/CSP703/k7035813.jpg');
+}
+
+.course-thumbnail.volunteer-work {
+    background-image:url('http://www.sdflc.org/wp-content/uploads/2015/07/volunteers_building.jpg');
+}
+
+.course-thumbnail.marketability {
+    background-image:url('http://www.muslimmentalhealth.com/mmh/images/img-2.jpg');
+}
+
+.course-thumbnail:before {
+    content: "";
+    background: #000;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .4;
+}
+
+.course-thumbnail-text {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    height: auto;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    z-index: 2;
+    color: white;
+    text-shadow: 2px 2px #0f0f0f;
 }
 
-.step {
+.feature-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-
-.step-icon {
-    height: 100px;
-    width: 100px;
-    border: 1px solid #000;
-    border-radius: 50%;
 }
